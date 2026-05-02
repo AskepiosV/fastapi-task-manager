@@ -1,14 +1,25 @@
-# FastAPI Task Manager
+# Task Manager (Full Stack)
 
-API simple para gestionar tareas usando FastAPI.
+Simple task manager built with FastAPI and vanilla JavaScript.
 
-## Endpoints
+## Features
 
-- GET /tareas
-- POST /tareas
-- PUT /tareas/{id}
-- DELETE /tareas/{id}
+- Create tasks
+- View tasks
+- Backend API with FastAPI
+- Frontend with HTML + JS
 
-## Uso
+## Tech
 
+- Python (FastAPI)
+- JavaScript (fetch API)
+- HTML
+
+## Run
+
+Backend:
 uvicorn main:app --reload
+
+Frontend:
+cd frontend
+python -m http.server 5500
