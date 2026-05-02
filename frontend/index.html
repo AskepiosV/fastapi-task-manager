@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+    <title>Askepios TASKS</title>
+  </head>
+  <body>
+    <h1>WELCOME</h1>
+    <div id="lista"></div>
+    <script>
+      fetch("http://127.0.0.1:8000/tareas")  
+      .then(response => response.json())
+      .then(data => {
+        var contenedor = document.getElementById("lista")
+        var tarea = data[0]["tarea"]
+        var elemento = document.createElement("li")
+        elemento.innerText = tarea
+        contenedor.appendChild(elemento)
+      });
+    </script>
+  </body>
+</html>
+
